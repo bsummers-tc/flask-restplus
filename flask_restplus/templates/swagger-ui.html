@@ -53,6 +53,7 @@
                 url: "{{ specs_url }}",
                 validatorUrl: "{{ config.SWAGGER_VALIDATOR_URL }}" || null,
                 dom_id: "#swagger-ui",
+                oauth2RedirectUrl: "{{ config.SWAGGER_UI_OAUTH_REDIRECT_URL }}",
                 presets: [
                     SwaggerUIBundle.presets.apis,
                     SwaggerUIStandalonePreset.slice(1) // No Topbar
